@@ -150,7 +150,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator RestartGame()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TicTacToe");
     }
 
     /// <summary>
