@@ -1,7 +1,7 @@
 # Can a complete beginner in Unity create a game using only ChatGPT?
 
 ## What did I make?
-A simple player vs. computer tic-tac-toe game on Unity. Solely used OpenAI's GPT-4 (gpt-4-0314).
+A simple player vs. computer tic-tac-toe game on Unity. Solely used OpenAI's GPT-4 (gpt-4-0314) as a guide.
 
 ## Why did I make this?
 To test ChatGPT's capabilities in teaching a complete beginner how to create games in the Unity environment.
@@ -15,7 +15,7 @@ There is a rudimentary tic-tac-toe game that can be played. Functioning buttons 
 
 The computer can determine when the player is about to win and can block intentionally.
 
-**Gif to be inserted**
+![computer_blocking](gifs/blocking.mp4)
 
 The computer cannot determine when it is about to win. The computer only has a basic strategy - unless the player is about to win, place randomly.
 
@@ -57,6 +57,8 @@ To replicate the game locally follow these instructions:
 2. **Begin with an overall picture**: Begin with a subsystems overview to see the overall architecture. Then these subsystems can be implemented one-by-one to fit within the token limit.
 
 3. **Give detailed bug reports to ChatGPT**: When encountering bugs, ensure that the details are related to ChatGPT with high detail. Ideally test after implementing a new system.
+
+4. **Accelerating learning**: ChatGPT is capable of reducing the steep learning curve in creating games on Unity. It is able to provide guidance when creating game logic and functions. Feedback can be obtained when encountering bugs and suggests improvements.
 
 ## Future work
 1. **Improve the computer**: It should seek to win and not solely block the opponent trying to win.
