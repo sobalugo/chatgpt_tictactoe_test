@@ -15,7 +15,7 @@ There is a rudimentary tic-tac-toe game that can be played. Functioning buttons 
 
 The computer can determine when the player is about to win and can block intentionally.
 
-![computer_blocking](https://github.com/sobalugo/chatgpt_tictactoe_test/blob/master/gifs/blocking.mp4)
+![computer_blocking](./gifs/blocking.gif)
 
 The computer cannot determine when it is about to win. The computer only has a basic strategy - unless the player is about to win, place randomly.
 
