@@ -9,20 +9,20 @@ To test ChatGPT's capabilities in teaching a complete beginner how to create gam
 My capabilities as a programmer was basic to intermediate at this stage. Unity uses C# as its scripting language. My background is in Electrical and Electronic Engineering and have previous experience in: Matlab, C, C++, Python, and Assembly. All previous applications of coding were solely for engineering; zero game-making experience.
 
 ## Results
-There is a rudimentary tic-tac-toe game that can be played. Functioning buttons and appropriate feedback of `X`'s (player) and `O`'s (computer) to match. Win/lose/draw detection. When a game is finished, it clears the board and restarts after a few seconds.
+1. There is a rudimentary tic-tac-toe game that can be played. Functioning buttons and appropriate feedback of `X`'s (player) and `O`'s (computer) to match. Win/lose/draw detection. When a game is finished, it clears the board and restarts after a few seconds.
 
-**Gif to be inserted**
+<img src="./gifs/basic_game.gif" width="200">
 
-The computer can determine when the player is about to win and can block intentionally.
+2. The computer can determine when the player is about to win and can block intentionally:
 
-![computer_blocking](./gifs/blocking.gif)
+<img src="./gifs/blocking.gif" width="200">
 
-The computer cannot determine when it is about to win. The computer only has a basic strategy - unless the player is about to win, place randomly.
+3. The computer cannot determine when it is about to win in the next turn. The computer only has the strategy - block player if they are about to win, else place randomly:
 
-**Gif to be inserted**
+<img src="./gifs/about_to_win.gif" width="200">
 
 ## Method
-It must be noted that the method below is not the initial method, but the final method which lead to the creation of the current state of the game. Lessons learned from experimentation are highlighted in this document.
+It must be noted that the method below is not the initial method, but the final method which led to the creation of the current state of the game.
 
 1. Used OpenAI's ChatGPT, gpt-4-0314. Introduce the task to ChatGPT: Ensure that prompt contains "provide step-by-step instructions" and "include all code needed", or similar. The first instruction is to only generate an overview of the subsystems required for a tic-tac-toe game. 
 2. Once the subsystems have been layed out, study the whole game system. 
@@ -34,7 +34,7 @@ It must be noted that the method below is not the initial method, but the final 
 8. Repeat from step 3 for a new subsytem. This time, append the summary of what has occurred before. Repeat steps 3 to 7 until all subsytems have been implemented and tested this way.
 
 ## Prerequesites
-Unity Hub and Unity Editor.
+Unity Hub and Unity Editor v2021.3.24f1.
 
 ## Replication instructions
 To replicate the game locally follow these instructions:
@@ -49,7 +49,7 @@ To replicate the game locally follow these instructions:
 2. Click on the Unity play button at the top.
 3. Click on the box to place an X. The computer responds with an O somewhere else on the board.
 4. Once the game is over, wait a few seconds and the game will restart.
-5. Press play again.
+5. Press play again to stop the game.
 
 ## Lessons
 1. **Making the game could not fit within one context window**: Token limits meant that GPT-4 could not simply ingest all of the instructions, then output the full method and code, within one context window. This applied even for a relatively simple game of tic-tac-toe.
